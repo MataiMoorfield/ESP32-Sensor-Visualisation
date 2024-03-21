@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"532118811d838799","x":-340,"y":-80,"width":250,"height":60,"color":"5","type":"text","text":"ESP32"},
+		{"id":"3c330d2afd64bbb3","x":-590,"y":-220,"width":250,"height":60,"color":"1","type":"text","text":"Sensor"},
+		{"id":"6c0a496c9455b2fd","x":120,"y":-80,"width":250,"height":60,"color":"4","type":"text","text":"WiFi"},
+		{"id":"b2d6384caf57bdcb","x":120,"y":160,"width":250,"height":60,"color":"4","type":"text","text":"WiFi"},
+		{"id":"ec7a0747343897cf","x":120,"y":40,"width":250,"height":60,"color":"6","type":"text","text":"ESP32 IP"},
+		{"id":"69c8e9cf6942bbec","x":-260,"y":160,"width":250,"height":60,"color":"2","type":"text","text":"Python logger"},
+		{"id":"3a7d1cff453afd11","x":-620,"y":160,"width":250,"height":60,"color":"3","type":"text","text":"Log (log.csv)"},
+		{"id":"4ac1f800a357cc4f","x":-620,"y":400,"width":250,"height":60,"color":"2","type":"text","text":"Main Python script"},
+		{"id":"feba6a31e2f434d0","x":-260,"y":300,"width":250,"height":60,"color":"5","type":"text","text":"HTML and CSS (index.html and style.css)"},
+		{"id":"7e969880f02de143","x":120,"y":400,"width":250,"height":60,"color":"6","type":"text","text":"Local host"}
+	],
+	"edges":[
+		{"id":"9e87f23bdfafcf1e","fromNode":"3c330d2afd64bbb3","fromSide":"bottom","toNode":"532118811d838799","toSide":"left"},
+		{"id":"911e5ad7a17e167c","fromNode":"532118811d838799","fromSide":"right","toNode":"6c0a496c9455b2fd","toSide":"left","label":"JSON"},
+		{"id":"e63161367ddfaa55","fromNode":"6c0a496c9455b2fd","fromSide":"bottom","toNode":"ec7a0747343897cf","toSide":"top"},
+		{"id":"66545140641fdb03","fromNode":"ec7a0747343897cf","fromSide":"bottom","toNode":"b2d6384caf57bdcb","toSide":"top"},
+		{"id":"ed1a0acfc39fdb33","fromNode":"b2d6384caf57bdcb","fromSide":"left","toNode":"69c8e9cf6942bbec","toSide":"right"},
+		{"id":"14daa25f5b21b19b","fromNode":"69c8e9cf6942bbec","fromSide":"left","toNode":"3a7d1cff453afd11","toSide":"right"},
+		{"id":"674487096cce4494","fromNode":"4ac1f800a357cc4f","fromSide":"top","toNode":"feba6a31e2f434d0","toSide":"left"},
+		{"id":"26f317da80b23bfc","fromNode":"4ac1f800a357cc4f","fromSide":"right","toNode":"7e969880f02de143","toSide":"left"},
+		{"id":"5f524ce603bb16b2","fromNode":"3a7d1cff453afd11","fromSide":"left","toNode":"4ac1f800a357cc4f","toSide":"left","fromEnd":"arrow"}
+	]
+}
