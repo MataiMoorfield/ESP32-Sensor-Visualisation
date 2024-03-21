@@ -17,8 +17,6 @@ Install nessacerry requirements:
 ```
 pip install -r requirements.txt
 ```
-> Note:
-> Use ```python3``` for macOS
 
 # Examples
 Located in the ```examples``` folder, there a few examples:
@@ -30,6 +28,9 @@ Located in the ```examples``` folder, there a few examples:
 
 ## Sending a JSON string:
 The first example is sending a JSON string
+
+## MPU6050
+This example uses an MPU6050 and displays the rotation and acceleration in a web page hosted by a Python script. Full details are in the ```README.md``` of the example.
 
 # Tesing
 Under the ```test``` folder, there is a ```test_logger.py```. This does the same as the ESP32 in the first example above (sending a JSON string). ```test_logger.py``` can be used for tesing the ```main.py``` and ```log.py``` without having to upload any code to the ESP32. 
@@ -59,3 +60,4 @@ THe ESP32 hosts a webserver containing raw sensor data. The ```log.py``` logs th
   </a>
 </p>
 
+This repository is licenced under the MIT licence

@@ -4,6 +4,7 @@
 #include <Wire.h>
 #include <MPU6050.h>
 
+
 const char *ssid = "network_name";          // Change with network name
 const char *password = "network_password";  // Change with network password
 
