@@ -42,8 +42,14 @@ THe ESP32 hosts a webserver containing raw sensor data. The ```log.py``` logs th
 # Languages:
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,cpp,arduino,html,css" />
+    <img src="https://skillicons.dev/icons?i=py,cpp,arduino,html,css" />
   </a>
 </p>
 
+# Tools
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=obsidian,arduino,github,vscode" />
+  </a>
+</p>
 
