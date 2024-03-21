@@ -1,0 +1,4 @@
+DHT11:            ESP32:
+VCC         →       3.3v
+GND         →       GND
+Signal      →       D4
