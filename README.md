@@ -13,6 +13,12 @@ Git clone repository (or download as .ZIP):
 git clone https://github.com/MataiMoorfield/ESP32-Sensor-WebViz
 cd ESP32-Sensor-WebViz
 ```
+Install nessacerry requirements:
+```
+pip install -r requirements.txt
+```
+> Note:
+> Use ```python3``` for macOS
 
 # Examples
 Located in the ```examples``` folder, there a few examples:
