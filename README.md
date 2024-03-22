@@ -10,8 +10,8 @@ Display live data from an ESP32 on a locally hosted website running on a persona
 (Install [Python](https://www.python.org) and [Arduino IDE](https://www.arduino.cc) first)
 1. Git clone repository (or download as .ZIP):
 ```
-git clone https://github.com/MataiMoorfield/ESP32-Sensor-WebViz
-cd ESP32-Sensor-WebViz
+git clone https://github.com/MataiMoorfield/ESP32-Sensor-Visualisation
+cd ESP32-Sensor-Visualisation
 ```
 2. Install nessacerry requirements:
 ```
