@@ -11,5 +11,9 @@ ArduinoJson.h by "Benoît Blanchon"
 4. Upload code to the ESP32
 5. View the serial monitor to see IP address
 6. Change the ```log.py``` script for the ESP32's IP (line ```36```)
-7. Run the ```log.py```
-8. Run the ```main.py```. Open the link of the local host which appears in the terminal.
+7. ```cd``` into the string directory:
+```
+cd info/test/string
+```
+7. Run the ```log.py``` (```python log.py``` - use ```python3``` for macOS)
+8. Run the ```main.py``` (```python main.py```). Open the link of the local host which appears in the terminal.

@@ -21,6 +21,10 @@ The rest of the libraries are installed automatically by installing the ESP32 co
 6. View the serial monitor to see the ESP32 WiFi status (connected or not) and the local IP (i.e. ```192.168.1.39```). Just to double check, you can enter the IP address into a search engine. A string of the differet rotation and acceleration data should appear.
 7. Update the IP address of the ESP32 in the ```log.py``` script in line ``36``
 8. Make sure you have installed the Python requirements in the ```requirements.txt``` file. If you haven't ```cd``` into the main directory and type the command ```pip install -r requirements.txt``` (use ```pip3``` for macOS)
+9. ```cd``` into the MPU6050 directory:
+```
+cd examples/mpu6050
+```
 
 # Run
 1. Connect the ESP32 to power

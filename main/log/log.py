@@ -33,6 +33,6 @@ def update_csv_periodically(url, csv_filename, interval_seconds=1):
         time.sleep(interval_seconds)
 
 if __name__ == '__main__':
-    url = 'http://192.168.1.39'
-    csv_filename = 'log.csv'
+    url = '__IP__' # Enter IP here
+    csv_filename = 'log/log.csv'
     update_csv_periodically(url, csv_filename)
