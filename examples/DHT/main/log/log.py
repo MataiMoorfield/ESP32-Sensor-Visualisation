@@ -16,15 +16,13 @@ def fetch_and_store_data(url, csv_filename):
         
         if data:  
             with open(csv_filename, 'a', newline='') as csvfile:
-                fieldnames = ['Time'] + list(data.keys())  # Include 'Time' as the first column
+                fieldnames = ['Time'] + list(data.keys()) 
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 
-                # Write header if the file is empty
                 if csvfile.tell() == 0:
                     writer.writeheader()
                 
-                # Write the data with the timestamp
-                data['Time'] = time.strftime('%H:%M:%S')  # Add timestamp
+                data['Time'] = time.strftime('%H:%M:%S')
                 writer.writerow(data)
                 
             logging.info("Data stored successfully in %s", csv_filename)
@@ -33,7 +31,7 @@ def fetch_and_store_data(url, csv_filename):
     else:
         logging.error("Failed to fetch data from the provided URL")
 
-def update_csv_periodically(url, csv_filename, interval_seconds=1):  # Default interval changed to 1 minute
+def update_csv_periodically(url, csv_filename, interval_seconds=1):
     logging.info("Starting CSV update process...")
     while True:
         fetch_and_store_data(url, csv_filename)
