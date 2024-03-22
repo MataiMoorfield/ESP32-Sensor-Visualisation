@@ -1,37 +1,56 @@
-import csv
 import tkinter as tk
+from tkinter import ttk
+import pandas as pd
+import threading
+import time
 
-def read_csv(filename):
-    with open(filename, 'r', newline='') as csvfile:
-        reader = csv.DictReader(csvfile)
-        data = list(reader)
-    return data
+class LogViewerApp:
+    def __init__(self, root, log_file):
+        self.root = root
+        self.log_file = log_file
+        self.root.title("Log Viewer")
+        
+        self.table = ttk.Treeview(self.root)
+        
+        self.columns = self.get_csv_columns()
+        
+        self.table['columns'] = self.columns
+        
+        for col in self.columns:
+            self.table.column(col, anchor=tk.W, width=150)
+            self.table.heading(col, text=col, anchor=tk.W)
+        
+        self.table.pack(expand=True, fill=tk.BOTH)
+        
+        self.update_table()
+        
+    def get_csv_columns(self):
+        try:
 
-def update_data():
-    # Clear the text widget before updating
-    text_widget.delete(1.0, tk.END)
-    
-    # Read the CSV file again to update the data
-    data = read_csv(csv_filename)
-    
-    # Insert CSV data into the text widget
-    for row in data:
-        text_widget.insert(tk.END, str(row) + "\n")
-    
-    # Schedule the next update after 1 second
-    text_widget.after(1000, update_data)
+            df = pd.read_csv(self.log_file, nrows=1)
+            return df.columns.tolist()
+        except Exception as e:
+            print("Error:", e)
+            return []
+        
+    def update_table(self):
+        try:
+            df = pd.read_csv(self.log_file)
+            self.update_dataframe(df)
+        except Exception as e:
+            print("Error:", e)
+            
+        self.root.after(1000, self.update_table)
+        
+    def update_dataframe(self, df):
+        self.table.delete(*self.table.get_children())
+        for index, row in df.iterrows():
+            self.table.insert("", "end", values=[row[col] for col in self.columns])
 
-# Create a Tkinter window
-window = tk.Tk()
-window.title("CSV Data")
+def main():
+    root = tk.Tk()
+    app = LogViewerApp(root, "log/log.csv")
+    root.mainloop()
 
-# Create a text widget to display CSV data
-text_widget = tk.Text(window)
-text_widget.pack()
-
-# Read the CSV data initially
-csv_filename = 'log/log.csv'
-update_data()
-
-# Start the Tkinter event loop
-window.mainloop()
+if __name__ == "__main__":
+    main()
