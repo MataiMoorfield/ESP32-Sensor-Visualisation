@@ -1,15 +1,7 @@
 # Setup
 1. Change network name and password in the ```main.ino``` for you current WiFi network. Change the type of DHT sensor in line ```13``` of the ```main.ino``` code for the DHT11, DHT21, or DHT22 sensor. The code defults it to 11.
 2. Connect ESP32 with a DHT temperature and humidity module using the wiring in the ```wiring.txt``` file
-3. If you haven't already, install the core for ESP32:
- - Open the Arduino IDE.
- - Go to File > Preferences.
- - In the "Additional Board Manager URLs" field, add the following URL: https://dl.espressif.com/dl/package_esp32_index.json
- - Click OK to close the Preferences window.
- - Go to Tools > Board > Boards Manager...
- - Search for "esp32" in the Boards Manager search bar.
- - Install "esp32" by Espressif Systems.
- 
+3. If you haven't already, install the core for ESP32 (details avaliable in the main README)
  4. Install the libraries for the ESP32 using the build in libraries for Arduino IDE. Install
 ```
 ArduinoJson.h by "Benoît Blanchon"

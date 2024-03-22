@@ -1,5 +1,3 @@
-# Run to test the logger
-
 import http.server
 import json
 from io import BytesIO

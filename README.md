@@ -61,3 +61,14 @@ THe ESP32 hosts a webserver containing raw sensor data. The ```log.py``` logs th
 </p>
 
 This repository is licenced under the MIT licence
+
+Core ESP32:
+
+ - Open the Arduino IDE.
+ - Go to File > Preferences.
+ - In the "Additional Board Manager URLs" field, add the following URL: https://dl.espressif.com/dl/package_esp32_index.json
+ - Click OK to close the Preferences window.
+ - Go to Tools > Board > Boards Manager...
+ - Search for "esp32" in the Boards Manager search bar.
+ - Install "esp32" by Espressif Systems.
+ 
