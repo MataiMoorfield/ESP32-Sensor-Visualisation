@@ -15,5 +15,5 @@ ArduinoJson.h by "Benoît Blanchon"
 ```
 cd info/test/string
 ```
-7. Run the ```log.py``` (```python log.py``` - use ```python3``` for macOS)
-8. Run the ```main.py``` (```python main.py```). Open the link of the local host which appears in the terminal.
+7. Run the ```log.py``` first(```python log.py``` - use ```python3``` for macOS)
+8. Run the ```main.py``` second (```python main.py```). Open the link of the local host which appears in the terminal.

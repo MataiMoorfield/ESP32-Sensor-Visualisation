@@ -28,7 +28,7 @@ cd examples/mpu6050
 
 # Run
 1. Connect the ESP32 to power
-2. Run the ```log.py``` script:
+2. Run the ```log.py``` script before the ```main.py```:
 ```
 cd examples/mpu6050/main/log
 python log.py

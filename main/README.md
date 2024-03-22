@@ -6,13 +6,20 @@ cd main
 ```
 
 # GUI
-Run GUI by runnign the Python script:
+Run GUI by firstly running the logger:
+```
+python log/log.py
+```
+> Use ```python3``` for macOS
+Then run the GUI:
 ```
 python gui.py
 ```
-> Use ```pip3``` for macOS
-
 # Webpage
+Run the logger:
+```
+python log/log.py
+```
 Run the webpage by running the ```webpage.py``` script:
 ```
 python webpage.py
