@@ -3,6 +3,9 @@ import csv
 import time
 import logging
 
+with open('log.csv', 'w'):
+    pass
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def fetch_and_store_data(url, csv_filename):
