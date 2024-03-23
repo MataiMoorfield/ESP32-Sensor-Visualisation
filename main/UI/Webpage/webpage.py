@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import csv
+import os
 
 app = Flask(__name__)
 
@@ -11,7 +12,8 @@ def read_csv(filename):
 
 @app.route('/')
 def display_csv():
-    csv_filename = 'log/log.csv'
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_filename = os.path.join(current_dir, '..', '..', 'log', 'log.csv')
     data = read_csv(csv_filename)
     print(data) 
     return render_template('index.html', data=data)

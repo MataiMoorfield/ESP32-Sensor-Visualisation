@@ -1,9 +1,14 @@
+import os
 import requests
 import csv
 import time
 import logging
 
-with open('log.csv', 'w'):
+current_dir = os.path.dirname(__file__)
+
+csv_filename = os.path.join(current_dir, '..', 'log.csv')
+
+with open(csv_filename, 'w'):
     pass
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -37,6 +42,6 @@ def update_csv_periodically(url, csv_filename, interval_seconds=1):
         time.sleep(interval_seconds)
 
 if __name__ == '__main__':
-    url = '__ESP32__IP__' # Enter IP here
-    csv_filename = 'log.csv'
+    url = '_ESP32_IP_' # Enter IP here
+    csv_filename = os.path.abspath(os.path.join(current_dir, '..', 'log.csv'))
     update_csv_periodically(url, csv_filename)

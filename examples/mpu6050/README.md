@@ -1,6 +1,14 @@
 # Setup
 1. Change network name and password in the ```main.ino``` for you current WiFi network
-2. Connect ESP32 with a MPU6050 module using the wiring on the ```wiring.txt``` file
+2. Connect ESP32 with a MPU6050 module using the wiring below:
+```
+MPU6050:            ESP32:
+VCC         →       3.3v
+GND         →       GND
+SCL         →       D22
+SDA         →       D21
+```
+
 3. If you haven't already, install the core for ESP32:
  - Open the Arduino IDE.
  - Go to File > Preferences.

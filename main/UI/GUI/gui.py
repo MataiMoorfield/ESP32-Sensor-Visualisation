@@ -3,6 +3,7 @@ from tkinter import ttk
 import pandas as pd
 import threading
 import time
+import os
 
 class LogViewerApp:
     def __init__(self, root, log_file):
@@ -22,11 +23,12 @@ class LogViewerApp:
         
         self.table.pack(expand=True, fill=tk.BOTH)
         
-        self.update_table()
+        self.refresh_thread = threading.Thread(target=self.update_periodically)
+        self.refresh_thread.daemon = True 
+        self.refresh_thread.start()
         
     def get_csv_columns(self):
         try:
-
             df = pd.read_csv(self.log_file, nrows=1)
             return df.columns.tolist()
         except Exception as e:
@@ -39,17 +41,22 @@ class LogViewerApp:
             self.update_dataframe(df)
         except Exception as e:
             print("Error:", e)
-            
-        self.root.after(1000, self.update_table)
-        
+    
     def update_dataframe(self, df):
         self.table.delete(*self.table.get_children())
         for index, row in df.iterrows():
             self.table.insert("", "end", values=[row[col] for col in self.columns])
+            
+    def update_periodically(self):
+        while True:
+            self.update_table()
+            time.sleep(1) 
 
 def main():
     root = tk.Tk()
-    app = LogViewerApp(root, "log/log.csv")
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    log_file = os.path.join(current_dir, '..', '..', 'log', 'log.csv')
+    app = LogViewerApp(root, log_file)
     root.mainloop()
 
 if __name__ == "__main__":
