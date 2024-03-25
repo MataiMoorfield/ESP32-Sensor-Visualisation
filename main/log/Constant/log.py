@@ -18,20 +18,20 @@ def fetch_and_store_data(url, csv_filename):
     
     if response.status_code == 200:
         data = response.json()
-        print("Data received:", data) # For debugging
+        print("Data received:", data)  # For debugging
         
-        if data:  
+        if data:
+            fieldnames = ['Time'] + list(data.keys())
+
             with open(csv_filename, 'a', newline='') as csvfile:
-                fieldnames = ['Time'] + list(data[0].keys())
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 
                 if csvfile.tell() == 0:
                     writer.writeheader()
                 
                 current_time = time.strftime('%H:%M:%S')
-                for item in data:
-                    item['Time'] = current_time
-                    writer.writerow(item)
+                data['Time'] = current_time
+                writer.writerow(data)
                 
             logging.info("Data stored successfully in %s", csv_filename)
         else:
@@ -47,6 +47,6 @@ def update_csv_periodically(url, csv_filename, interval_seconds=1):
         time.sleep(interval_seconds)
 
 if __name__ == '__main__':
-    url = '_ESP32_IP_' # Change with ESP32 IP
+    url = '__ESP32_IP__'  # Change with ESP32 IP
     csv_filename = os.path.abspath(os.path.join(current_dir, '..', 'log.csv'))
     update_csv_periodically(url, csv_filename)
