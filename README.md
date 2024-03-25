@@ -35,7 +35,7 @@ Infomation on these are located in ```README``` files in each folder
 
 # How to use
 1. Upload one of the examples to your ESP32. Make sure to modify the network name and passoword. In the serial monitor, view the IP. 
-2. There are two types of logs: single and constant. The single only has one line of data which is updated. The constant log constantly creates a new line with data, allowing to see old data. Enter the ESP32's IP into either log (```constant``` at line ```50``` or ```single``` at line ```45```). Run either log.
+2. There are two types of logs: single and constant. The single only has one line of data which is updated. The constant log constantly creates a new line with data, allowing to see old data. Enter the ESP32's IP into either log (```constant.py``` at line ```50``` or ```single.py``` at line ```42```). Run either log: ```python constant.py``` or ```python single.py```
 3. Create a new terminal and run either ```webpage``` or ```GUI``` Python scripts. The webpage creates a local host which can be viewed on a search engine and the GUI creates a Python graphic user interface. Both of them display the data from the log. If you have run the single log, the table of data will be two rows, while the constant will keep on creating more rows.
 
 # Tests
