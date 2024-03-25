@@ -8,12 +8,6 @@ This examople is for the ESP32 to test the full system without any sensors.
 ```
 ArduinoJson.h by "Benoît Blanchon"
 ```
-4. Upload code to the ESP32
-5. View the serial monitor to see IP address
-6. Change the ```log.py``` script for the ESP32's IP (line ```36```)
-7. ```cd``` into the string directory:
-```
-cd info/test/string
-```
-7. Run the ```log.py``` first(```python log.py``` - use ```python3``` for macOS)
-8. Run the ```main.py``` second (```python main.py```). Open the link of the local host which appears in the terminal.
+5. Upload ```main.ino``` code to ESP32
+6. View the serial monitor to see the ESP32 WiFi status (connected or not) and the local IP (i.e. ```192.168.1.39```). Just to double check, you can enter the IP address into a search engine. A string of the JSON data will appear.
+7. Update the IP address of the ESP32 in the loggers (view main README for details).
