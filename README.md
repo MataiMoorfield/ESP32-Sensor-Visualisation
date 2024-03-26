@@ -25,6 +25,7 @@ pip install -r requirements.txt
  - Go to Tools > Board > Boards Manager...
  - Search for "esp32" in the Boards Manager search bar.
  - Install "esp32" by Espressif Systems.
+ More info about getting started with the ESP32 [here](https://randomnerdtutorials.com/getting-started-with-esp32/)
 
 # Examples
 Located in the ```examples``` folder, there a few examples:
