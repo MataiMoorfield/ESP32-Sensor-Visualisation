@@ -69,6 +69,9 @@ Connecting...
 ```
 Solution: be sure to enter the correct network name and passowrd for it to be able to connect to the WiFi.
 
+More debugging info will be here shortly :)
+
+
 # Languages
 <p align="center">
   <a href="https://skillicons.dev">
