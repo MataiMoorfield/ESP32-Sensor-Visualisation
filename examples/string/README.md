@@ -1,5 +1,5 @@
 # Info
-This examople is for the ESP32 to test the full system without any sensors but still running the ESP32.
+This example is for the ESP32 to test the full system without any sensors.
 
 # How to use
 1. Change the code in the ```main.ino``` script for your current network and network password
