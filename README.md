@@ -44,7 +44,7 @@ Located under the ```tests``` folder (found in the ```info``` folder), there is 
 
 # How it works
 ## Webpage
-The ESP32 hosts a simple webserver containing the raw sensor data in JSON format. Both of the ```log.py``` logs this data into ```log.csv```. The ```webpage.py``` file hosts a complex webpage using ```index.html``` and ```style.css``` to display the ```log.csv``` file. Images and different features can be added to ```index.html``` and ```style.css``` which is unable to work if the HTML is directly hosted on the ESP32. Check out the map located in ```info/layout```. Open ```Layout.canvas``` with Obsidian.
+The ESP32 hosts a simple webserver containing the raw sensor data in JSON format. Both of the ```log.py``` logs this data into ```log.csv```. The ```webpage.py``` file hosts a complex webpage using ```index.html``` and ```style.css``` to display the ```log.csv``` file. Images and different features can be added to ```index.html``` and ```style.css``` which is unable to work if the HTML is directly hosted on the ESP32. Check out the map located in ```info/layout```. Open ```layout.canvas``` with [Obsidian](https://obsidian.md).
 
 ## GUI
 Much like the webpage but with a Python GUI. The ESP32 hosts a simple webserver containing the raw sensor data in JSON format. Both of the ```log.py``` logs this data into ```log.csv```. The ```gui.py``` file creates a Python GUI and displays teh data in the ```log.csv```.
