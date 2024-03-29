@@ -1,5 +1,5 @@
 # ESP32 Sensor WebViz
-Display live data from an ESP32 on a locally hosted website or graphic user interface.
+Display live data from an ESP32 on a locally hosted website or graphic user interface. Video on examples and how to use will be up soon [here](https://youtube.com/@Bot-Frenzy) 
 
 # Uses
 - Live updates of UAV stats with responsive GUI
