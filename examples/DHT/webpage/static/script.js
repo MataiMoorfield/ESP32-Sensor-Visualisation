@@ -26,4 +26,4 @@ function fetchData() {
 
 fetchData();
 
-setInterval(fetchData, 10000); // Update every 10 seconds
+setInterval(fetchData, 5000); // Update every 10 seconds
