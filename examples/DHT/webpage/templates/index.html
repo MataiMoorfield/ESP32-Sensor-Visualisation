@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="10"> <!--Update every 10 seconds-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Station</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Current Stats</h1>
+    <p>Updates every 10 seconds</p>
+
+    <table id="data-table" border="1">
+        <thead>
+            <tr>
+                {% for key in data[0].keys() %}
+                    <th>{{ key }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    {% for value in row.values() %}
+                        <td>{{ value }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <p id="humidity-info"></p>
+    <p id="temperature-info"></p>
+
+    <img id="cloud-image" src="{{ url_for('static', filename='images/cloud.webp') }}" alt="Cloud Image">
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

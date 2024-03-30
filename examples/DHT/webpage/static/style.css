@@ -1,0 +1,16 @@
+* {
+    background-color: #eeeded;
+}
+
+h1 {
+    color: rgb(39, 38, 38);
+}
+#data-table {
+    display: none; /* Hide the table */
+}
+#cloud-image {
+    width: 100px; /* Example width */
+    height: auto; /* Example height */
+    border: 1px solid black; /* Example border */
+    /* Add more styles as needed */
+}
