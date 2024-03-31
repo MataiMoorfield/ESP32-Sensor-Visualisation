@@ -5,24 +5,25 @@ import os
 app = Flask(__name__)
 
 def read_csv(filename):
-    with open(filename, 'r', newline='') as csvfile:
-        reader = csv.DictReader(csvfile)
-        data = list(reader)
-        for row in data:
-            for key, value in row.items():
-                try:
-                    row[key] = round(float(value), 1)
-                except ValueError:
-                    pass  # Ignore non-numeric values
-    return data
+    try:
+        with open(filename, 'r', newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            data = list(reader)
+        return data
+    except Exception as e:
+        print("Error reading CSV file:", e)
+        return None
 
 @app.route('/')
 def display_csv():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     csv_filename = os.path.join(current_dir, '..', '..', '..', 'main', 'log', 'log.csv')
     data = read_csv(csv_filename)
-    print(data) 
-    return render_template('index.html', data=data)
+    if data is not None:
+        print(data)  # Check if data is in the expected format
+        return render_template('index.html', data=data)
+    else:
+        return "An error occurred while reading the CSV file."
 
 if __name__ == '__main__':
     app.run(debug=True)
