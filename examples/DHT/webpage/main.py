@@ -20,7 +20,7 @@ def display_csv():
     csv_filename = os.path.join(current_dir, '..', '..', '..', 'main', 'log', 'log.csv')
     data = read_csv(csv_filename)
     if data is not None:
-        print(data)  # Check if data is in the expected format
+        print(data)
         return render_template('index.html', data=data)
     else:
         return "An error occurred while reading the CSV file."
