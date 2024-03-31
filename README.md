@@ -37,7 +37,7 @@ Infomation on these are located in ```README``` files in each folder
 # How to use
 1. Upload one of the examples to your ESP32. Make sure to modify the network name and passoword. In the serial monitor, view the IP. 
 2. There are two types of logs: single and constant. The single only has one line of data which is updated. The constant log constantly creates a new line with data, allowing to see old data. Enter the ESP32's IP into either log (```constant.py``` at line ```50``` or ```single.py``` at line ```42```). Run either log: ```python constant.py``` or ```python single.py```
-3. Create a new terminal and run either ```webpage``` or ```GUI``` Python scripts. The webpage creates a local host which can be viewed on a search engine and the GUI creates a Python graphic user interface. Both of them display the data from the log. If you have run the single log, the table of data will be two rows, while the constant will keep on creating more rows.
+3. Create a new terminal and run either ```webpage``` or ```GUI``` Python scripts. You could also run the weather app example in the ```DHT``` folder. All of the webpage examples create a local host which can be viewed on a search engine and the GUI creates a Python graphic user interface. Both of them display the data from the log. If you have run the single log, the table of data will be two rows, while the constant will keep on creating more rows. The weather app example will display certain stats which are presented by the ESP32 when the DHT code is uploaded to it. The app will not work it random data in the log.
 
 # Tests
 Located under the ```tests``` folder (found in the ```info``` folder), there is a test for the logger called ```log test.py```. This Python script allows you to test the log system without uploading any code to it. Be sure to update the ESP32's IP with the local host of the test in the loggers. More details are its folder.
@@ -69,7 +69,15 @@ Connecting...
 ```
 Solution: be sure to enter the correct network name and passowrd for it to be able to connect to the WiFi.
 
-More debugging info will be here shortly :)
+```
+UndefinedError
+jinja2.exceptions.UndefinedError: list object has no element 0
+```
+Make sure you have run the logger first or have put an example CSV file as the ```log.csv```. This error is caused beacuse of the log being empty. You could put this in for example:
+```
+humidity,temperature
+17,28
+```
 
 
 # Languages

@@ -8,6 +8,12 @@ def read_csv(filename):
     with open(filename, 'r', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         data = list(reader)
+        for row in data:
+            for key, value in row.items():
+                try:
+                    row[key] = round(float(value), 1)
+                except ValueError:
+                    pass  # Ignore non-numeric values
     return data
 
 @app.route('/')

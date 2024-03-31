@@ -1,16 +1,42 @@
-* {
-    background-color: #eeeded;
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #486cee, #7cb6ef);
+    font-family: 'Courier New', Courier, monospace;
 }
 
-h1 {
-    color: rgb(39, 38, 38);
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#humidity-info,
+#temperature-info {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
 }
 #data-table {
     display: none; /* Hide the table */
-}
-#cloud-image {
-    width: 100px; /* Example width */
-    height: auto; /* Example height */
-    border: 1px solid black; /* Example border */
-    /* Add more styles as needed */
 }

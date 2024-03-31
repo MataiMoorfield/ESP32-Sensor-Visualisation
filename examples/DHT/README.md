@@ -21,10 +21,15 @@ The rest of the libraries are installed automatically by installing the ESP32 co
 7. Update the IP address of the ESP32 in the loggers (view main README for details).
 
 
+# Using exmaple weather app
+After uploading the ```main.ino``` code to the ESP32, run the single logger. Infomation about loggers is avaiable inthe main README. Next, run the ```main.py``` found under the ```webpage``` folder. This sould create a local host displaying the current stats:
 
-Example log:
+![weather app](<Screenshot 2024-03-31 at 14.42.40.png>)
+
+If you just want to test the website, put example stats in the ```log.csv``` (found in the ```log``` under the ```main``` folder). For example:
+
 ```
 humidity,temperature
-12,24
+17,28
 ```
-cut and copy to main ```log.csv```
+Cut and copy into ```log.csv```
