@@ -50,7 +50,7 @@ The ESP32 hosts a simple webserver containing the raw sensor data in JSON format
 Much like the webpage but with a Python GUI. The ESP32 hosts a simple webserver containing the raw sensor data in JSON format. Both of the ```log.py``` logs this data into ```log.csv```. The ```gui.py``` file creates a Python GUI and displays teh data in the ```log.csv```.
 
 # Notes
-Always run the logger first and keep it running behind the GUI or webpage (create a new terminal). This allows data to enter the log, then the ```gui.py``` or ```webpage.py``` file can use that data. If there is no data, nothing will be presented. 
+Always run the logger first and keep it running behind the GUI or webpage. To do this, create a new terminal and run them separately. This allows data to enter the log, then the ```gui.py``` or ```webpage.py``` file can use that data. If there is no data, nothing will be presented and will result in an error. 
 
 There is a reason the logger is seprate from the main. For example, let's say you are using this repository for a weather app. You will be able to be logging behind the app, which allows you to turn on/off the front end and still have a log.
 
@@ -73,12 +73,11 @@ Solution: be sure to enter the correct network name and passowrd for it to be ab
 UndefinedError
 jinja2.exceptions.UndefinedError: list object has no element 0
 ```
-Make sure you have run the logger first or have put an example CSV file as the ```log.csv```. This error is caused beacuse of the log being empty. You could put this in for example:
+Make sure the logger is running first or you have put an example CSV file as the ```log.csv```. This error is caused beacuse of the log being empty. You could put this in for example:
 ```
 humidity,temperature
 17,28
 ```
-
 
 # Languages
 <p align="center">
