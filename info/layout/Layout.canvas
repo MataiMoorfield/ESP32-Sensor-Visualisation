@@ -1,15 +1,16 @@
 {
 	"nodes":[
-		{"id":"532118811d838799","x":-340,"y":-80,"width":250,"height":60,"color":"5","type":"text","text":"ESP32"},
-		{"id":"3c330d2afd64bbb3","x":-590,"y":-220,"width":250,"height":60,"color":"1","type":"text","text":"Sensor"},
-		{"id":"6c0a496c9455b2fd","x":120,"y":-80,"width":250,"height":60,"color":"4","type":"text","text":"WiFi"},
-		{"id":"b2d6384caf57bdcb","x":120,"y":160,"width":250,"height":60,"color":"4","type":"text","text":"WiFi"},
-		{"id":"ec7a0747343897cf","x":120,"y":40,"width":250,"height":60,"color":"6","type":"text","text":"ESP32 IP"},
-		{"id":"69c8e9cf6942bbec","x":-260,"y":160,"width":250,"height":60,"color":"2","type":"text","text":"Python logger"},
-		{"id":"3a7d1cff453afd11","x":-620,"y":160,"width":250,"height":60,"color":"3","type":"text","text":"Log (log.csv)"},
-		{"id":"4ac1f800a357cc4f","x":-620,"y":400,"width":250,"height":60,"color":"2","type":"text","text":"Main Python script"},
-		{"id":"feba6a31e2f434d0","x":-260,"y":300,"width":250,"height":60,"color":"5","type":"text","text":"HTML and CSS (index.html and style.css)"},
-		{"id":"7e969880f02de143","x":120,"y":400,"width":250,"height":60,"color":"6","type":"text","text":"Local host"}
+		{"id":"532118811d838799","type":"text","text":"ESP32","x":-340,"y":-80,"width":250,"height":60,"color":"5"},
+		{"id":"3c330d2afd64bbb3","type":"text","text":"Sensor","x":-590,"y":-220,"width":250,"height":60,"color":"1"},
+		{"id":"6c0a496c9455b2fd","type":"text","text":"WiFi","x":120,"y":-80,"width":250,"height":60,"color":"4"},
+		{"id":"b2d6384caf57bdcb","type":"text","text":"WiFi","x":120,"y":160,"width":250,"height":60,"color":"4"},
+		{"id":"ec7a0747343897cf","type":"text","text":"ESP32 IP","x":120,"y":40,"width":250,"height":60,"color":"6"},
+		{"id":"69c8e9cf6942bbec","type":"text","text":"Python logger","x":-260,"y":160,"width":250,"height":60,"color":"2"},
+		{"id":"3a7d1cff453afd11","type":"text","text":"Log (log.csv)","x":-620,"y":160,"width":250,"height":60,"color":"3"},
+		{"id":"4ac1f800a357cc4f","type":"text","text":"Main Python script","x":-620,"y":400,"width":250,"height":60,"color":"2"},
+		{"id":"feba6a31e2f434d0","type":"text","text":"HTML and CSS (index.html and style.css)","x":-260,"y":300,"width":250,"height":60,"color":"5"},
+		{"id":"7e969880f02de143","type":"text","text":"Local host","x":120,"y":400,"width":250,"height":60,"color":"6"},
+		{"id":"aed33bb22c5dd87e","x":370,"y":40,"width":400,"height":400,"type":"file","file":"README.md.md"}
 	],
 	"edges":[
 		{"id":"9e87f23bdfafcf1e","fromNode":"3c330d2afd64bbb3","fromSide":"bottom","toNode":"532118811d838799","toSide":"left"},
