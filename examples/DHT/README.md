@@ -32,4 +32,20 @@ If you just want to test the website, put example stats in the ```log.csv``` (fo
 humidity,temperature
 17,28
 ```
-Cut and copy into ```log.csv```
+Cut and copy into ```log.csv```. 
+
+The weather app works by creating a table with the data, then retrevies certain pieces of the data under "temperature" and "humidity". It then displays this data on the webpage. 
+
+Folder structure:
+```
+DHT
+├── esp32
+│   └── main
+│       └── main.ino
+└── webpage
+    ├── static
+    │   ├── style.css
+    │   └── script.js
+    └── templates
+        └── index.html
+```
