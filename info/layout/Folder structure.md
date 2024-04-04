@@ -1,4 +1,12 @@
 ```
+.obsidian
+│
+├── app.json
+├── appearance.json
+├── core-plugins-migration.json
+├── core-plugins.json
+└── workspace.json
+
 examples
 │
 ├── DHT

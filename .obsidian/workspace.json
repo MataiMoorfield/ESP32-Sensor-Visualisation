@@ -11,11 +11,14 @@
             "id": "5e437c644ebb2be5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "info/layout/Folder structure.md",
-                "mode": "source",
-                "source": false
+                "file": "info/layout/layout.canvas",
+                "viewState": {
+                  "x": 335.88085442345255,
+                  "y": 166.95027997667378,
+                  "zoom": -1.4880884499134677
+                }
               }
             }
           }
@@ -85,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "info/layout/Folder structure.md",
+                "file": "info/layout/layout.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "info/layout/Folder structure.md",
+                "file": "info/layout/layout.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "info/layout/Folder structure.md"
+                "file": "info/layout/layout.canvas"
               }
             }
           }
@@ -148,8 +151,8 @@
   },
   "active": "5e437c644ebb2be5",
   "lastOpenFiles": [
-    "README.md.md",
     "info/layout/Folder structure.md",
+    "README.md.md",
     "info/layout/layout.canvas",
     "examples/mpu6050/README.md"
   ]

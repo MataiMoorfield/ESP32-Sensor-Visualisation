@@ -10,7 +10,7 @@
 		{"id":"4ac1f800a357cc4f","type":"text","text":"Main Python script","x":-620,"y":400,"width":250,"height":60,"color":"2"},
 		{"id":"feba6a31e2f434d0","type":"text","text":"HTML and CSS (index.html and style.css)","x":-260,"y":300,"width":250,"height":60,"color":"5"},
 		{"id":"7e969880f02de143","type":"text","text":"Local host","x":120,"y":400,"width":250,"height":60,"color":"6"},
-		{"id":"aed33bb22c5dd87e","x":370,"y":40,"width":400,"height":400,"type":"file","file":"README.md.md"}
+		{"id":"d72c942390b74438","x":460,"y":-560,"width":460,"height":1720,"type":"file","file":"info/layout/Folder structure.md"}
 	],
 	"edges":[
 		{"id":"9e87f23bdfafcf1e","fromNode":"3c330d2afd64bbb3","fromSide":"bottom","toNode":"532118811d838799","toSide":"left"},
