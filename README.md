@@ -7,7 +7,7 @@ Display live data from an ESP32 on a locally hosted website or graphic user inte
 - Typical ESP32 web hosting projects but with the ability to add images, responsiveness, and much more
 
 # First setup
-(Install [Python](https://www.python.org) and [Arduino IDE](https://www.arduino.cc) first)
+(Install [Python](https://www.python.org) and [Arduino IDE](https://www.arduino.cc) if not done so first)
 1. Git clone repository (or download as .ZIP):
 ```
 git clone https://github.com/MataiMoorfield/ESP32-Sensor-Visualisation
